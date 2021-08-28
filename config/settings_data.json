@@ -77,6 +77,30 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "main-test-product": {
+        "type": "main-test-product",
+        "blocks": {
+          "0846bbb4-131b-4b45-9f74-61b75b5b2395": {
+            "type": "tax_notice_block",
+            "settings": {
+              "tax_notice": "Tax Included"
+            }
+          },
+          "76b19595-1345-4671-8a68-63857bbcb7ce": {
+            "type": "shipping_notice_block",
+            "settings": {
+              "shipping_notice": "Ships in 100 days"
+            }
+          }
+        },
+        "block_order": [
+          "0846bbb4-131b-4b45-9f74-61b75b5b2395",
+          "76b19595-1345-4671-8a68-63857bbcb7ce"
+        ],
+        "settings": {
+          "show_review": true
+        }
       }
     },
     "content_for_index": []

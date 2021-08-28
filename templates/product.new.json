@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "second": {
+      "type": "main-test-product",
+      "blocks": {
+        "abf4d81e-1cd1-408d-b627-c12d77ad5018": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice": "Tax Not Included"
+          }
+        },
+        "932ed1a5-aefd-4f71-911c-9c2052461369": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice": "Ships in 99 days"
+          }
+        },
+        "c8759452-0e2f-4a53-ab9e-1f5ed3ea8473": {
+          "type": "product_price_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "abf4d81e-1cd1-408d-b627-c12d77ad5018",
+        "932ed1a5-aefd-4f71-911c-9c2052461369",
+        "c8759452-0e2f-4a53-ab9e-1f5ed3ea8473"
+      ],
+      "settings": {
+        "show_review": false
+      }
+    },
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "5a86864d-5f0a-4e73-9cd1-c956caa92bbb": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice": "Tax Included"
+          }
+        },
+        "b7a41de2-6428-415c-acb9-c2d5aef153a4": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice": "Ships in 2 months"
+          }
+        },
+        "038c14ae-58fa-43d9-83a8-dfb4bebcae21": {
+          "type": "product_price_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "5a86864d-5f0a-4e73-9cd1-c956caa92bbb",
+        "b7a41de2-6428-415c-acb9-c2d5aef153a4",
+        "038c14ae-58fa-43d9-83a8-dfb4bebcae21"
+      ],
+      "settings": {
+        "show_review": true
+      }
+    },
+    "16301710186039db02": {
+      "type": "image-with-text",
+      "blocks": {
+        "16301710186039db02-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16301710186039db02-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16301710186039db02-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "https:\/\/google.com"
+          }
+        }
+      },
+      "block_order": [
+        "16301710186039db02-0",
+        "16301710186039db02-1",
+        "16301710186039db02-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about_4.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    }
+  },
+  "order": [
+    "second",
+    "main",
+    "16301710186039db02"
+  ]
+}
