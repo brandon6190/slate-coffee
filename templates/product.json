@@ -27,7 +27,9 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -35,7 +37,9 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
         "description": {
           "type": "description",
@@ -57,15 +61,74 @@
         "description",
         "share"
       ],
-      "settings": {}
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {}
+    "our_promises": {
+      "type": "multicolumn",
+      "blocks": {
+        "eb00ae8d-e0c9-4bcc-90e8-81a66939af07": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmer.png",
+            "title": "Direct Relations to Farmers",
+            "text": "<p>Suspendisse interdum consectetur libero id faucibus. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Lacus vestibulum sed arcu non odio.<\/p>"
+          }
+        },
+        "85e5ae8b-912c-40a2-bdb0-7c94a8aed9e7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "title": "Plant a Tree for 3rd Order",
+            "text": "<p>Malesuada fames ac turpis egestas sed tempus. In fermentum et sollicitudin ac orci phasellus egestas tellus. Id faucibus nisl tincidunt eget. ibero volutpat sed cras ornare. <\/p>"
+          }
+        },
+        "f4860b36-0a03-4763-8ac1-f3acc622f226": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roaster.png",
+            "title": "Roasted by Hand in FL",
+            "text": "<p>Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "eb00ae8d-e0c9-4bcc-90e8-81a66939af07",
+        "85e5ae8b-912c-40a2-bdb0-7c94a8aed9e7",
+        "f4860b36-0a03-4763-8ac1-f3acc622f226"
+      ],
+      "settings": {
+        "title": "Our Promises ⭐",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You May Also Like ❤️",
+        "collection": "coffee",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "our_promises",
+    "featured_collection"
   ]
 }
