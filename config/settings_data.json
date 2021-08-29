@@ -101,6 +101,59 @@
         "settings": {
           "show_review": true
         }
+      },
+      "testimonial-slider": {
+        "type": "testimonial-slider",
+        "blocks": {
+          "848e73fd-6e9f-4592-8b73-0f3f71b20010": {
+            "type": "testimonial",
+            "settings": {
+              "text": "<p>Volutpat diam ut venenatis tellus in metus. Lacus vestibulum sed arcu non odio euismod lacinia at. Pulvinar sapien et ligula ullamcorper malesuada proin libero.<\/p>",
+              "name": "Samantha K.",
+              "image": "shopify:\/\/shop_images\/user_5.jpg"
+            }
+          },
+          "7f57502f-74d4-46ff-b5cd-d10ea72780c2": {
+            "type": "testimonial",
+            "settings": {
+              "text": "<p>Et ligula ullamcorper malesuada proin libero. Justo nec ultrices dui sapien eget mi proin sed libero. In arcu cursus euismod quis. Magna fermentum iaculis eu non diam. <\/p>",
+              "name": "Gary Kowolski",
+              "image": "shopify:\/\/shop_images\/user_4.jpg"
+            }
+          },
+          "ebed8883-77fe-457f-91d4-39cf4ecf521f": {
+            "type": "testimonial",
+            "settings": {
+              "text": "<p>Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Mi bibendum neque egestas congue quisque egestas diam.<\/p>",
+              "name": "Amanda",
+              "image": "shopify:\/\/shop_images\/user_2.jpg"
+            }
+          },
+          "1345f599-cfc2-4d65-87ae-3273fa35a55b": {
+            "type": "testimonial",
+            "settings": {
+              "text": "<p>Pellentesque eu tincidunt tortor aliquam nulla facilisi. Quam viverra orci sagittis eu. Cursus in hac habitasse platea dictumst quisque.<\/p>",
+              "name": "Liam Ford",
+              "image": "shopify:\/\/shop_images\/user_3.jpg"
+            }
+          },
+          "5c1d988c-7929-4e85-b3ad-87a154b00ef7": {
+            "type": "testimonial",
+            "settings": {
+              "text": "<p>Massa sed elementum tempus egestas sed sed risus pretium. Sed enim ut sem viverra aliquet eget sit. Pellentesque elit eget gravida cum sociis natoque penatibus et.<\/p>",
+              "name": "John",
+              "image": "shopify:\/\/shop_images\/user_1.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "848e73fd-6e9f-4592-8b73-0f3f71b20010",
+          "7f57502f-74d4-46ff-b5cd-d10ea72780c2",
+          "ebed8883-77fe-457f-91d4-39cf4ecf521f",
+          "1345f599-cfc2-4d65-87ae-3273fa35a55b",
+          "5c1d988c-7929-4e85-b3ad-87a154b00ef7"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": []

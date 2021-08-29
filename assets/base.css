@@ -2126,9 +2126,15 @@ details-disclosure > details {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.testimonial-icon img {
-  max-width: 10%;
+.testimonial-card:focus {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.testimonial-icon svg {
+  max-width: 10%;
+  max-height: 35px;
+}
+
 
 /* .testimonial-text {
   text-align: center;
