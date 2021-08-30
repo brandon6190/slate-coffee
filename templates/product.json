@@ -57,6 +57,10 @@
             "page": "",
             "icon": "truck"
           }
+        },
+        "5d2ddcd5-2cdb-4c2f-950e-bb15c76cd676": {
+          "type": "coffee_info",
+          "settings": {}
         }
       },
       "block_order": [
@@ -69,7 +73,8 @@
         "buy_buttons",
         "description",
         "share",
-        "6c7d004d-6d8b-4be6-84c7-d9d0857aa298"
+        "6c7d004d-6d8b-4be6-84c7-d9d0857aa298",
+        "5d2ddcd5-2cdb-4c2f-950e-bb15c76cd676"
       ],
       "settings": {
         "enable_sticky_info": true,
