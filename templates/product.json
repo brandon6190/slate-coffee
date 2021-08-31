@@ -60,7 +60,13 @@
         },
         "5d2ddcd5-2cdb-4c2f-950e-bb15c76cd676": {
           "type": "coffee_info",
-          "settings": {}
+          "settings": {
+            "taste": "{{ product.metafields.my_fields.taste.value }}",
+            "strength": "{{ product.metafields.my_fields.strength.value }}",
+            "acidity": "{{ product.metafields.my_fields.acidity.value }}",
+            "coffee_type": "{{ product.metafields.my_fields.coffee_type.value }}",
+            "origin": "{{ product.metafields.my_fields.origin.value }}"
+          }
         }
       },
       "block_order": [
