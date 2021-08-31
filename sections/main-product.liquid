@@ -117,103 +117,29 @@
                   <table class="coffee-info">
                     <tr>
                       <td><b>Taste</b></td>
-                      <td>{{product.metafields.my_fields.taste}}</td>
+                      <td>{{block.settings.taste}}</td>
                     </tr>
                     <tr>
                       <td><b>Strength</b></td>
                       <td>
-                      <div class="coffee-indicator">
-                        {% if product.metafields.my_fields.strength == 5 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                        {% elsif product.metafields.my_fields.strength == 4 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.strength == 3 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.strength == 2 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.strength == 1 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% else %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% endif %}
-                      </div>
+                        {% assign coffeeStrength = block.settings.strength | plus: 0 %}
+                        {% render 'coffee-indicator', level: coffeeStrength %}
                       </td>
                     </tr>
                     <tr>
                       <td><b>Acidity</b></td>
                       <td>
-                        <div class="coffee-indicator">
-                        {% if product.metafields.my_fields.acidity == 5 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                        {% elsif product.metafields.my_fields.acidity == 4 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.acidity == 3 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.acidity == 2 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% elsif product.metafields.my_fields.acidity == 1 %}
-                          {% render 'coffee-bean-filled' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% else %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                          {% render 'coffee-bean-empty' %}
-                        {% endif %}
-                      </div>
+                        {% assign coffeeAcidity = block.settings.acidity | plus: 0 %}
+                        {% render 'coffee-indicator', level: coffeeAcidity %}
                       </td>
                     </tr>
                     <tr>
                       <td><b>Type</b></td>
-                      <td>{{product.metafields.my_fields.coffee_type}}</td>
+                      <td>{{block.settings.coffee_type}}</td>
                     </tr>
                     <tr>
                       <td><b>Origin</b></td>
-                      <td>{{product.metafields.my_fields.origin}}</td>
+                      <td>{{block.settings.origin}}</td>
                     </tr>
                   </table>
 
@@ -715,17 +641,17 @@
         },
         {
           "id": "strength",
-          "label": "Strength",
-          "type": "number"
+          "label": "Strength (0 to 5)",
+          "type": "text"
         },
         {
           "id": "acidity",
-          "label": "Acidity",
-          "type": "number"
+          "label": "Acidity (0 to 5)",
+          "type": "text"
         },
         {
-          "id": "type",
-          "label": "Type",
+          "id": "coffee_type",
+          "label": "Coffee Type",
           "type": "text"
         },
         {
